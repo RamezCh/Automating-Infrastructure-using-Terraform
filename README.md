@@ -59,7 +59,9 @@ aws configure
 ```
 - Enter the access key and secret access key when prompted.
 - Press Enter for region and output format options (not required).
-
+```bash
+cat ~/.aws/credentials
+```
 
 3. Create a Project Directory:
 
