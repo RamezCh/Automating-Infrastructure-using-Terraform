@@ -208,6 +208,31 @@ resource "aws_instance" "myec2" {
 ```
 
 2. Apply Updated Configuration:
+3. 
 ```bash
 terraform init
 terraform apply --auto-approve
+```
+
+### Step 5: Connect to the Instance and Verify Jenkins Installation
+
+1. Navigate to the AWS Console:
+
+- Open the AWS Console.
+- Go to the EC2 Dashboard.
+- Find your instance from the list (look for the instance with the "terraform-instance" tag).
+
+2. Connect to the Instance:
+
+- Select your instance and click on the "Connect" button.
+- You will see several connection options. Choose "Connect using EC2 Instance Connect".
+- Click Connect (Basically default options)
+
+3. Once connected to your EC2 instance, check if Jenkins is installed:
+```bash
+sudo su -
+java --version
+python --version
+jenkins --version
+```
+[Sample End Results](Endscreen.png)
