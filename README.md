@@ -228,11 +228,11 @@ terraform apply --auto-approve
 - You will see several connection options. Choose "Connect using EC2 Instance Connect".
 - Click Connect (Basically default options)
 
-3. Once connected to your EC2 instance, check if Jenkins is installed:
+3. Once connected to your EC2 instance, check if Java, Python, & Jenkins are installed:
 ```bash
 sudo su -
 java --version
 python --version
 jenkins --version
 ```
-[Sample End Results](Endscreen.png)
+![Sample End Results](Endscreen.png)
